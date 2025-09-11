@@ -4,10 +4,15 @@ services:
     env: python
     plan: free
     buildCommand: |
+      # 1. Construir el frontend
       cd chatcv/frontend/document-chat-app && npm install && npm run build
-      mkdir -p chatcv/backend/static
-      cp -r chatcv/frontend/document-chat-app/build * chatcv/backend/static/
-      cd chatcv/backend && pip install -r requirements.txt
+      
+      # 2. Copiar la build al backend
+      mkdir -p ../../backend/static
+      cp -r build/* ../../backend/static/
+      
+      # 3. Instalar dependencias del backend
+      cd ../../backend && pip install -r requirements.txt
     startCommand: "cd chatcv/backend && gunicorn app:app"
     autoDeploy: true
     region: oregon
