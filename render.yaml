@@ -4,9 +4,9 @@ services:
     env: python
     plan: free
     buildCommand: |
-      cd frontend/document-chat-app/ && npm install && npm run build
-      mkdir -p backend/static
-      cp -r frontend/document-chat-app/build/* backend/static/
+      cd frontend/document-chat-app && npm install && npm run build
+      mkdir -p ../../backend/static
+      cp -r frontend/document-chat-app/build * backend/static/
       cd backend && pip install -r requirements.txt
     startCommand: "cd backend && gunicorn app:app"
     autoDeploy: true
