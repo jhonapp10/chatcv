@@ -1,0 +1,102 @@
+{
+  "skills": [
+    {
+      "skill": "Ionic Framework",
+      "level": 70
+    },
+    {
+      "skill": "Visual Studio 2022",
+      "level": 95
+    },
+    {
+      "skill": "Visual Studio Code",
+      "level": 95
+    },
+    {
+      "skill": "C#",
+      "level": 90
+    },
+    {
+      "skill": "Python",
+      "level": 80
+    },
+    {
+      "skill": "JavaScript",
+      "level": 85
+    },
+    {
+      "skill": "HTML",
+      "level": 90
+    },
+    {
+      "skill": "CSS",
+      "level": 80
+    },
+    {
+      "skill": "SQL",
+      "level": 95
+    },
+    {
+      "skill": "GitHub",
+      "level": 90
+    },
+    {
+      "skill": "Azure DevOps",
+      "level": 90
+    },
+    {
+      "skill": "WPF",
+      "level": 80
+    },
+    {
+      "skill": "LINQ",
+      "level": 85
+    },
+    {
+      "skill": "DOORS",
+      "level": 70
+    },
+    {
+      "skill": "Angular",
+      "level": 85
+    },
+    {
+      "skill": "Agile Scrum",
+      "level": 90
+    },    
+    {
+      "skill": "ERP Dynamics NAV (Business Central)",
+      "level": 80
+    }
+  ],
+  "experience": [
+    {
+      "title": "SOFTWARE DEVELOPER",
+      "company": "THALES ESPAÑA S.L (MADRID)",
+      "period": "18/10/2023  - CURRENT",
+      "description": "Programming in Microsoft NET -Experience with Doors -Daily work with Azure DevOps (tasks, bugs)-Testing with Jest, Json NewtonSoft-LINQ programming -WPF -Advanced SQL procedures and handling -Agile methodology -Serialization and Deserialization Json -DLLS export in Services/Clients"
+    },
+    {
+      "title": "MICROSOFT .NET DEVELOPER",
+      "company": "AKKODIS ",
+      "period": "01/07/2022 - 17/10/2023",
+      "description": "Programming in Microsoft .NET-Experience with Doors-Daily work with Azure DevOps (tasks, bugs) -LINQ programming -WPF -Advanced SQL procedures and handling -Agile methodology."
+    },
+    {
+      "title": "WEB DEVELOPER (MICROSOFT .NET)",
+      "company": "DEVAIM PROYECTOS SOFTWARE S.L ",
+      "period": "09/02/2021  - 09/02/2022",
+      "description": "Multi-platform Applications Developer (Languages: C# and React JS);Programming in Microsoft .NET;Implementation of Get, Post, Insert, Update methods;Version control with GitHub and Visual Studio Code;ERP Dynamics NAV version migrations (Business Central);Development in Ms Dynamics Business Central with extensions;Basic user-level handling of Dynamics NAV (Invoicing, Configurations, Data types)"
+    },
+    {
+      "title": "MODULAR PROGRAMMING IN ODOO AND WEB DESIGN",
+      "company": "ELCOS S.L ",
+      "period": "25/03/2019  - 18/09/2020",
+      "description": "Experience in Python programming for Odoo modules (2 years);Experience in HTML and JavaScript programming (2 years);Familiarity with environments like PhpStorm (PHP), JavaScript, and advanced handling with FTP Filezilla."
+    }    
+    ],
+  "projects": [
+    "Proyecto 1: Descripción breve del proyecto.",
+    "Proyecto 2: Descripción breve del proyecto."
+  ]
+}
