@@ -4,7 +4,7 @@ import requests
 from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 
-API_KEY = os.environ.get("AIzaSyAGWjan0k15-XIQJ09pV-d86IJf0jJCGrc")
+API_KEY = os.environ.get("GEMINI_API_KEY")
 
 app = Flask(__name__, static_folder='../frontend/document-chat-app/build', static_url_path='')
 CORS(app)
