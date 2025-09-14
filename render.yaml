@@ -4,6 +4,6 @@ services:
     env: python                   # Entorno Python
     plan: free                    # Plan gratuito
     buildCommand: "pip install -r backend/requirements.txt"
-    startCommand: "cd backend && gunicorn app:app"
+    startCommand: "cd backend && gunicorn backend/app:app"
     branch: master
     autoDeploy: true
