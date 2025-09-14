@@ -7,3 +7,12 @@ services:
     startCommand: "cd backend && gunicorn app:app"
     branch: master
     autoDeploy: true
+
+  - type: static
+    name: chatcv-frontend
+    plan: free
+    buildCommand: "cd frontend/document-chat-app && npm install && npm run build"
+    staticPublishPath: "frontend/document-chat-app/build"
+    branch: master
+    autoDeploy: true
+
