@@ -3,7 +3,7 @@ services:
     name: chatcv-backend          # Nombre del servicio en Render
     env: python                   # Entorno Python
     plan: free                    # Plan gratuito
-    buildCommand: "cd backend && pip install -r requirements.txt"
+    buildCommand: "pip install -r backend/requirements.txt"
     startCommand: "cd backend && gunicorn app:app"
     branch: master
     autoDeploy: true
