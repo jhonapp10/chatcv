@@ -84,17 +84,31 @@ def chat():
         response = requests.post(url, headers=headers, json=data_for_api)
         response.raise_for_status()
         gemini_response = response.json()
-        
-        # Extraer la respuesta de texto del modelo
+        print("Gemini response:", gemini_response)  # 👈 DEBUG EN LOGS
+
         text_response = gemini_response['candidates'][0]['content']['parts'][0]['text']
         return jsonify({"response": text_response})
 
-    except requests.exceptions.RequestException as e:
-        print(f"Error de solicitud a Gemini: {e}")
-        return jsonify({"error": "Error al comunicarse con el modelo de IA."}), 500
-    except (KeyError, IndexError) as e:
-        print(f"Error al analizar la respuesta de Gemini: {e}")
-        return jsonify({"error": "Error en el formato de la respuesta del modelo de IA."}), 500
+    except Exception as e:
+        print("Error en /chat:", e)
+        return jsonify({"error": str(e)}), 500
+
+
+    #try:
+     #   response = requests.post(url, headers=headers, json=data_for_api)
+     #   response.raise_for_status()
+     #   gemini_response = response.json()
+        
+        # Extraer la respuesta de texto del modelo
+     #   text_response = gemini_response['candidates'][0]['content']['parts'][0]['text']
+     #   return jsonify({"response": text_response})
+
+    #except requests.exceptions.RequestException as e:
+    #    print(f"Error de solicitud a Gemini: {e}")
+    #    return jsonify({"error": "Error al comunicarse con el modelo de IA."}), 500
+    #except (KeyError, IndexError) as e:
+    #    print(f"Error al analizar la respuesta de Gemini: {e}")
+    #    return jsonify({"error": "Error en el formato de la respuesta del modelo de IA."}), 500
 
 if __name__ == '__main__':
     app.run()
