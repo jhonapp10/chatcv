@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { marked } from 'marked';
 
 // Este componente principal gestiona la lógica y la UI de la aplicación.
@@ -8,6 +8,18 @@ const App = () => {
   const [userInput, setUserInput] = useState('');
   const [isProcessing, setIsProcessing] = useState(false);
   const [fileName, setFileName] = useState('');
+
+   const chatContainerRef = useRef(null);
+   // 🔹 Efecto: scroll automático al último mensaje
+  useEffect(() => {
+    if (chatContainerRef.current) {
+      chatContainerRef.current.scrollTop = chatContainerRef.current.scrollHeight;
+    }
+  }, [chatHistory]);
+  const [theme, setTheme] = useState('light');
+  const toggleTheme = () => {
+    setTheme(prev => (prev === 'light' ? 'dark' : 'light'));
+  };
 
   // Maneja el cambio de archivo en el input.
   const handleFileChange = (event) => {
