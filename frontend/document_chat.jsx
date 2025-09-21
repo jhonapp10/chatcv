@@ -173,7 +173,7 @@ const App = () => {
 
         {/* Panel de chat */}
         <div className="md:w-2/3 w-full p-6 flex flex-col justify-between">
-          <div className="flex-1 overflow-y-auto mb-4 p-2 space-y-4 bg-gray-50 rounded-lg">
+          <div ref={chatContainerRef} className="flex-1 overflow-y-auto mb-4 p-2 space-y-4 bg-gray-50 rounded-lg scroll-smooth">
             {chatHistory.length === 0 ? (
               <div className="flex flex-col items-center justify-center h-full text-center text-gray-400">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 mb-2" viewBox="0 0 20 20" fill="currentColor">
