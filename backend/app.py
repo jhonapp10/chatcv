@@ -7,7 +7,7 @@ from flask_cors import CORS
 API_KEY = os.environ.get("GEMINI_API_KEY")
 
 app = Flask(__name__, static_folder='../frontend/document-chat-app/build', static_url_path='')
-CORS(app, resources={r"/*": {"origins": "https://chatcv-frontend.onrender.com/"}})
+CORS(app, resources={r"/*": {"origins": "*"}})
 #CORS(app)
 
 # Cargar los datos del CV desde el archivo JSON
