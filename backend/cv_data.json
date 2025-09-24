@@ -95,6 +95,26 @@
       "description": "Experience in Python programming for Odoo modules (2 years);Experience in HTML and JavaScript programming (2 years);Familiarity with environments like PhpStorm (PHP), JavaScript, and advanced handling with FTP Filezilla."
     }    
     ],
+    "Academic": [
+    {
+      "title": "MASTER IMF Software Ingeneering IA",
+      "company": "IMF",
+      "period": "2025 - ACTUAL",
+      "description": "Specialized in Artificial Intelligence and Machine Learning, including supervised/unsupervised models, natural language processing, and neural networks."
+    },
+    {
+      "title": "COMPUTER ENGINEERING DEGREE",
+      "company": "UNED",
+      "period": "2021 - ACTUAL",
+      "description": "Specialization in Software Engineering and Computer Systems."
+    },
+    {
+      "title": "Systems embed software",
+      "company": "UCLM",
+      "period": "2019 - 2020",
+      "description": "Specialization in Computer Systems embed Software Aircraft. Hands-on experiencie with Ada and C"
+    }
+  ],
   "projects": [
     "Proyecto 1: Descripción breve del proyecto.",
     "Proyecto 2: Descripción breve del proyecto."
